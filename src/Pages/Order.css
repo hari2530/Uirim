@@ -1,0 +1,125 @@
+/* Container to hold card and form side by side */
+.order-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between card and form */
+  padding: 20px;
+}
+
+.order-card {
+  flex: 1; /* Makes each side take equal width */
+  max-width: 300px;
+  height: fit-content; 
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  left: 300px;
+}
+
+.f-container {
+  border: none;
+  flex: 1 1;
+  width: 50%;
+  padding: 20px;
+  box-shadow: none;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+.order-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.order-card-title,
+.order-card-price,
+.order-card-brand,
+.order-card-seller,
+.order-card-location,
+.order-card-pincode{
+  margin: 8px 0;
+  text-align: left;
+}
+.order-card-title{
+  font-size: 18px;
+}
+
+.order-card-brand,
+.order-card-seller,
+.order-card-location,
+.order-card-pincode{
+  font-size: 13px;
+}
+
+.order-lpm{
+  margin-top: 25px;
+}
+
+.order-view-mobile img {
+  display: flex;
+  width: 27px;
+  height: 30px;
+}
+
+.order-view-mobile {
+  display: flex;
+  margin-left: 19px;
+  margin-top: 20px;
+  font-size: x-large;
+  font-weight: bold;
+  color: #0024FF;
+}
+
+.f-container .info-text {
+  margin-bottom: 15px;
+  font-size: 30px;
+  width: max-content;
+}
+
+.f-container .login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-form label {
+  width: 100%;
+  font-size: 30px;
+}
+
+.login-form input{
+  width: 568px;
+  height: 25px;
+}
+
+.login-form button {
+  width: 20%;
+  margin-left: 200px;
+  background-color: #e64a19;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mobile-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.order-btn {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background-color: #0056b3;
+}

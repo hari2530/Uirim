@@ -1,0 +1,212 @@
+* {
+  font-family: Nunito;
+}
+
+.Main-Mobile-nav {
+  display: none;
+}
+
+img {
+  cursor: pointer;
+}
+
+.search {
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  height: 35px;
+  position: relative;
+  top: 44px;
+  left: 360px;
+  gap: 10px;
+}
+
+.search-box {
+  flex-grow: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.search-exit-img {
+  border-right: 1px solid #ccc;
+  padding-right: 8px;
+}
+
+.for {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #0024FF;
+  width: 172px;
+  height: 55px;
+  position: relative;
+  top: 100px;
+  left: 61px;
+}
+
+.for img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.for span {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 38px;
+  text-align: left;
+  color: white;
+  margin-left: 5px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 75%;
+  height: 70px;
+  position: relative;
+  top: 18px;
+  left: 360px;
+}
+
+.search-box-1 {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 500px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.search-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  font-size: large;
+}
+
+.search-list li {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-list li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.main-container {
+  font-family: Nunito;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  max-width: 100%;
+  padding: 64px;
+}
+
+.main-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  width: 313px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.main-card button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 30px;
+}
+
+.main-card button:hover {
+  background-color: #0056b3;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .Main-Mobile-nav {
+    display: block;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .Main-Mobile-nav .humburger-img {
+    margin-left: 10px;
+  }
+
+  .Main-Mobile-nav span {
+    position: relative;
+    top: -8px;
+    left: 14px;
+    font-size: x-large;
+  }
+
+  .Main-Mobile-nav .Profile-pic-img {
+    position: relative;
+    left: 132px;
+    top: 3px;
+  }
+
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 12px;
+    width: 100%;
+    height: 75px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .main-card {
+    flex: 1 1 calc(50% - 20px);
+    /* 50% width minus the gap */
+    box-sizing: border-box;
+    max-width: calc(50% - 20px);
+    /* Limit to 50% width */
+  }
+
+  .main-card button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+}
